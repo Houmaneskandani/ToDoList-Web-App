@@ -1,0 +1,331 @@
+/* CSS declarations go here */
+body {
+  font-family: sans-serif;
+  background-color: #315481;
+  background-image: linear-gradient(to bottom, #315481, #918e82 100%);
+  background-attachment: fixed;
+ 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ 
+  padding: 0;
+  margin: 0;
+ 
+  font-size: 14px;
+}
+ 
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 100%;
+  background: white;
+}
+.hide {
+  display: none !important;
+}
+
+.subtask-container {
+  display: block;
+  width: 88%;
+  padding-left: 1.7rem;
+  margin-top: 5px;
+}
+.subtask-container input {
+  padding: .35rem;
+  width: 70%;
+  margin-bottom: 15px;
+}
+.subtask-container li {
+  padding: 3px;
+  border: none;
+  border-top: rgb(87, 89, 92) solid 1px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.add-button {
+  float: right
+}
+
+.delete-button {
+  float: left;
+}
+ 
+header {
+  background: #d2edf4;
+  background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
+  padding: 20px 15px 15px 15px;
+  position: relative;
+}
+ 
+#login-buttons {
+  display: block;
+}
+ 
+
+
+.new-subtask-button{
+  margin-bottom: 1em
+}
+
+
+
+h1 {
+  font-size: 1.5em;
+  margin: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-right: 1em;
+}
+ 
+form {
+  margin-top: 10px;
+  margin-bottom: -10px;
+  position: relative;
+}
+ 
+.new-task input {
+  box-sizing: border-box;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  width: 100%;
+  padding-right: 80px;
+  font-size: 1em;
+}
+ 
+.new-task input:focus{
+  outline: 0;
+}
+
+/* Overlay styling */
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.overlay .overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 25px;
+  color: white;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.edit-name input {
+  box-sizing: border-box;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  width: 100%;
+  padding-right: 80px;
+  font-size: 1em;
+}
+ 
+.edit-name input:focus{
+  outline: 0;
+}
+
+.edit-name-button {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+
+.list-title {
+  position: absolute;
+  bottom: 150px;
+  left: 150px;
+  margin-bottom: 19px;
+
+}
+
+.update-button {
+  position: absolute;
+  bottom: 25%;
+}
+
+
+.delete-name {
+  position: absolute;
+  top: 190px;
+  /* top: 172px; */
+}
+
+.delete-multiple {
+  position: absolute;
+  top: 190px;
+} 
+
+ul {
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+.delete {
+  align-items: center;
+  float: right;
+  font-weight: bold;
+  background: none;
+  font-size: 1em;
+  border: none;
+  position: relative;
+}
+
+.dropbtn {
+  float: right;
+  background: none;
+  color: black;
+  font-size: 1em;
+  border: none;
+}
+
+.dropdown {
+  bottom: 1.2em;
+  float: right;
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 2px;
+  top: 1.7em;
+  bottom: 1.7em;
+  background-color: #f1f1f1;
+  min-width: 10em;
+  min-height: 2.5em;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border: none;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content .add-date {
+  color: black;
+  padding: 0.6em 0.6em;
+  width: auto;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content .add-time {
+  color: black;
+  padding: 0.6em 0.6em;
+  width: auto;
+  text-decoration: none;
+  display: none;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content .add-date:hover {background-color: #ddd;}
+
+.dropdown-content .add-time:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #ddd;}
+
+.delete:hover {background-color: #ddd;}
+
+.DatePickerContainer {
+  top: 1em;
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  position: relative;
+}
+ 
+li {
+  position: relative;
+  list-style: none;
+  border-bottom: #aaa solid 1px;
+  padding: 10px;
+}
+ 
+li .text {
+  overflow: auto;
+  margin-left: 10px;
+}
+ 
+li.checked {
+  color: #888;
+}
+ 
+li.checked .text {
+  text-decoration: line-through;
+}
+ 
+li.private {
+  background: rgb(221, 220, 223);
+  border-color: rgb(212, 212, 212);
+}
+ 
+header .hide-completed {
+  position: absolute;
+  bottom: 150px;
+  left: 425px;
+}
+ 
+.toggle-private {
+  margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+  li {
+    padding: 12px 15px;
+  }
+ 
+  .search {
+    width: 150px;
+    clear: both;
+  }
+ 
+  .new-task input {
+    padding-bottom: 5px;
+  }
+}
+
+.name-popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0,0,0, 0.5);
+}
+
+
+.name-popup-inner {
+  background: #d2edf4;
+  background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
+  padding: 20px 15px 15px 15px;
+  position: relative;
+  max-width: 600px;
+  height: 100px;
+  left: 0;
+  right: 0;
+  top: 5%;
+  bottom: 0;
+  margin: auto;
+}
