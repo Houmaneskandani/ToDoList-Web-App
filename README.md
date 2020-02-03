@@ -1,6 +1,18 @@
 # TaskManager
-
-If you guys have any questions / need help resolving merge conflicts, please let me know! :)
+Task Manager is a web-based app that allows a user to create online lists of tasks. The user can edit and delete these list, as well as share the lists with other users and also collaborate with other users on a single list. The app can also remind the user of the tasks on the list to complete, and set a time and date deadline that user wants to finish a task by.
+|
+||
+|||
+||||
+|||||
+||||||
+|||||||
+||||||
+|||||
+||||
+|||
+||
+|
 
 **YOU SHOULD NEVER TOUCH (PUSH OR PULL) WITHOUT THE WHOLE TEAM BEING INVOLVED!!**
 
@@ -45,3 +57,5 @@ If you guys have any questions / need help resolving merge conflicts, please let
 ```
  git checkout -- [FILE NAME]        // Reverts your local changes on a file to the most recent  
 ```
+
+
